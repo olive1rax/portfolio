@@ -5,7 +5,7 @@
 const STAR_COLOR = '#00FF00';
 const STAR_SIZE = 3;
 const STAR_MIN_SCALE = 0.2;
-const OVERFLOW_THRESHOLD = 50;
+const OVERFLOW_THRESHOLD = 150;
 const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8;
 
 const canvas = document.querySelector('canvas'),
@@ -20,7 +20,7 @@ let stars = [];
 let pointerX,
 pointerY;
 
-let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0025 };
 
 let touchInput = false;
 
@@ -29,9 +29,9 @@ resize();
 step();
 
 window.onresize = resize;
-canvas.onmousemove = onMouseMove;
-canvas.ontouchmove = onTouchMove;
-canvas.ontouchend = onMouseLeave;
+document.body.onmousemove = onMouseMove;
+document.body.ontouchmove = onTouchMove;
+document.body.ontouchend = onMouseLeave;
 document.onmouseleave = onMouseLeave;
 
 function generate() {
@@ -131,8 +131,8 @@ function step() {
 
 function update() {
 
-  velocity.tx *= 0.96;
-  velocity.ty *= 0.96;
+  velocity.tx *= 0.70;
+  velocity.ty *= 0.70;
 
   velocity.x += (velocity.tx - velocity.x) * 0.8;
   velocity.y += (velocity.ty - velocity.y) * 0.8;
