@@ -27,7 +27,7 @@ canvas {
   bottom: 0;
 }
 
-a {
+/*a {
   position: absolute;
   bottom: 2vmin;
   right: 2vmin;
@@ -37,13 +37,13 @@ a {
 
 a:hover {
   color: #fff;
-}
+}*/
 
 html {
   overflow-x: hidden;
 }
 
-b {
+a {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
   font-size: 80px;
@@ -57,8 +57,8 @@ b {
   transform: translateX(-50%) translateY(-50%);
 }
 
-b:before,
-b:after {
+a:before,
+a:after {
   content: '';
   padding: .9em .4em;
   position: absolute;
@@ -71,12 +71,12 @@ b:after {
   animation: 10s infinite alternate ease-in-out tipsy;
 }
 
-b:before {
+a:before {
   border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
-b:after {
+a:after {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
   box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
