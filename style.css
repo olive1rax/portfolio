@@ -43,7 +43,7 @@ html {
   overflow-x: hidden;
 }
 
-a {
+#title {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
   font-size: 80px;
@@ -57,8 +57,8 @@ a {
   transform: translateX(-50%) translateY(-50%);
 }
 
-a:before,
-a:after {
+#title:before,
+#title:after {
   content: '';
   padding: .6em .4em;
   position: absolute;
@@ -71,16 +71,17 @@ a:after {
   animation: 10s infinite alternate ease-in-out tipsy;
 }
 
-a:before {
+#title:before {
   border-color: rgb(214, 44, 44) rgb(214, 44, 44) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
-a:after {
+#title:after {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(214, 44, 44) rgb(214, 44, 44);
   box-shadow: 25px 25px 25px -4px rgba(0, 0, 0, 0.40);
 }
 
-a:hover{
- animation-play-state: paused;
+#title:hover{
+  animation: paused;
 }
+
