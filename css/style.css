@@ -107,6 +107,12 @@ html {
 	line-height: 80px;
 	transition: 0.5s;
   }
+  .fas {
+	font-size: 40px;
+	color: var(--black);
+	line-height: 80px;
+	transition: 0.5s;
+  }
   ul li a {
 	position: relative;
 	display: block;
@@ -147,7 +153,7 @@ html {
 	box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
   }
   
-  ul li:hover .fab {
+  ul li:hover .fab .fas{
 	color: var(--white);
   }
   ul li:hover:nth-child(1) a {
