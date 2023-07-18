@@ -73,97 +73,119 @@ html {
   animation: paused;
 }
 
-#menu {
-	background: rgb(214, 44, 44);
-	color: #FFF;
-	height: 41px;
-	padding-left: 18px;
-	border-radius: 9px;
-}
-#menu ul, #menu li {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none
-}
-#menu ul {
-	width: 100%;
-}
-#menu li {
-	float: left;
-	display: inline;
-	position: relative;
-}
-#menu a {
-	display: block;
-	line-height: 41px;
-	padding: 0 14px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 17px;
-	text-transform: lowercase;
-}
-#menu a.dropdown-arrow:after {
-	content: "\23F7";
-	margin-left: 5px;
-}
-#menu li a:hover {
-	color: #111;
-	background: #F2F2F2;
-}
-#menu input {
-	display: none;
+* {
 	margin: 0;
 	padding: 0;
-	height: 41px;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer
-}
-#menu label {
-	display: none;
-	line-height: 41px;
-	text-align: center;
+	box-sizing: border-box;
+  }
+  :root {
+	--white: #ffffff;
+	--black: #000;
+	--grey: #d3d3d3;
+	--facebook: #3b5999;
+	--twitter: #55acee;
+	--instagram: #e4405f;
+	--apple: #131418;
+  }
+  
+  body {
+	background: var(--white);
+  }
+  ul {
 	position: absolute;
-	left: 35px
-}
-#menu label:before {
-	font-size: 1.6em;
-	content: "\2261"; 
-	margin-left: 20px;
-}
-#menu ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 170px;
-	background: rgb(214, 44, 44);
-	position: absolute;
-	z-index: 99;
-	display: none;
-}
-#menu ul.sub-menus li {
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  ul li {
+	list-style: none;
+	margin: 0 40px;
+  }
+  ul li a .fab {
+	font-size: 40px;
+	color: var(--black);
+	line-height: 80px;
+	transition: 0.5s;
+  }
+  ul li a {
+	position: relative;
 	display: block;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	background-color: #808080;
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+	transition: 0.5s;
+	box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
+  }
+  ul li a::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -20px;
+	height: 100%;
+	width: 20px;
+	background-color: #93a092;
+	transition: 0.5s;
+	transform: rotate(0deg) skewY(-45deg);
+  }
+  ul li a::after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: -10px;
+	height: 20px;
 	width: 100%;
-}
-#menu ul.sub-menus a {
-	color: #FFFFFF;
-	font-size: 16px;
-}
-#menu li:hover ul.sub-menus {
-	display: block
-}
-#menu ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: #444444;
-}
-@media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
-}
+	background-color: var(--grey);
+	transition: 0.5s;
+	transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  ul li a:hover {
+	transform: perspective(1000px) rotate(-30deg) skew(25deg)
+	  translate(20px, -20px);
+	box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  ul li:hover .fab {
+	color: var(--white);
+  }
+  ul li:hover:nth-child(1) a {
+	background: var(--facebook);
+  }
+  ul li:hover:nth-child(1) a::before {
+	background: #5e77ab;
+  }
+  ul li:hover:nth-child(1) a::after {
+	background: #4c68a2;
+  }
+  ul li:hover:nth-child(2) a {
+	background: var(--instagram);
+  }
+  ul li:hover:nth-child(2) a::before {
+	background: #e4506b;
+  }
+  ul li:hover:nth-child(2) a::after {
+	background: #e76a7a;
+  }
+  ul li:hover:nth-child(3) a {
+	background: var(--twitter);
+  }
+  ul li:hover:nth-child(3) a::before {
+	background: #64b2ee;
+  }
+  ul li:hover:nth-child(3) a::after {
+	background: #73baf0;
+  }
+  ul li:hover:nth-child(4) a {
+	background: var(--apple);
+  }
+  ul li:hover:nth-child(4) a::before {
+	background: #171717;
+  }
+  ul li:hover:nth-child(4) a::after {
+	background: #2e2e2e;
+  }
