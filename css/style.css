@@ -82,15 +82,12 @@ html {
 	--white: #ffffff;
 	--black: #000;
 	--grey: #d3d3d3;
-	--facebook: #3b5999;
-	--twitter: #55acee;
-	--instagram: #e4405f;
-	--apple: #131418;
+	--facebook: rgb(214, 44, 44);
+	--twitter: rgb(214, 44, 44);
+	--instagram: rgb(214, 44, 44);
+	--apple: rgb(214, 44, 44);
   }
   
-  body {
-	background: var(--white);
-  }
   ul {
 	position: absolute;
 	top: 80%;
@@ -157,35 +154,35 @@ html {
 	background: var(--facebook);
   }
   ul li:hover:nth-child(1) a::before {
-	background: #5e77ab;
+	background: rgb(134, 28, 28);
   }
   ul li:hover:nth-child(1) a::after {
-	background: #4c68a2;
+	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(2) a {
 	background: var(--instagram);
   }
   ul li:hover:nth-child(2) a::before {
-	background: #e4506b;
+	background: rgb(134, 28, 28);
   }
   ul li:hover:nth-child(2) a::after {
-	background: #e76a7a;
+	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(3) a {
 	background: var(--twitter);
   }
   ul li:hover:nth-child(3) a::before {
-	background: #64b2ee;
+	background: rgb(134, 28, 28);
   }
   ul li:hover:nth-child(3) a::after {
-	background: #73baf0;
+	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(4) a {
 	background: var(--apple);
   }
   ul li:hover:nth-child(4) a::before {
-	background: #171717;
+	background: rgb(134, 28, 28);
   }
   ul li:hover:nth-child(4) a::after {
-	background: #2e2e2e;
+	background: rgb(212, 69, 69);
   }
