@@ -53,7 +53,7 @@ html {
   :root {
 	--white: #ffffff;
 	--black: #000;
-	--grey: #d3d3d3;
+	--grey: rgba(211, 211, 211, 0.14);
 	--facebook: rgb(214, 44, 44);
 	--twitter: rgb(214, 44, 44);
 	--instagram: rgb(214, 44, 44);
@@ -91,32 +91,14 @@ html {
 	width: 80px;
 	height: 80px;
 	text-align: center;
-	background-color: #808080;
+  background: rgba(0, 0, 0, 0.15);
 	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
 	transition: 0.5s;
-	box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
-  }
-  ul li a::before {
-	content: "";
-	position: absolute;
-	top: 10px;
-	left: -20px;
-	height: 100%;
-	width: 20px;
-	background-color: #93a092;
-	transition: 0.5s;
-	transform: rotate(0deg) skewY(-45deg);
-  }
-  ul li a::after {
-	content: "";
-	position: absolute;
-	bottom: -20px;
-	left: -10px;
-	height: 20px;
-	width: 100%;
-	background-color: var(--grey);
-	transition: 0.5s;
-	transform: rotate(0deg) skewX(-45deg);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  border: 1px solid rgba(255, 255, 255, 0.39);
   }
   
   ul li a:hover {
