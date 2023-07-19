@@ -49,6 +49,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
   }
   :root {
 	--white: #ffffff;
@@ -63,7 +64,7 @@ html {
   
   ul {
 	position: absolute;
-	top: 80%;
+	top: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: 0;
@@ -98,10 +99,15 @@ html {
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
-  border: 1px solid rgba(255, 255, 255, 0.39);
-  border: 1px solid rgba(255, 255, 255, 0.39);
+  border: 1px solid rgba(214, 44, 44, 0.39);
+  border-radius: 10px 10px 10px 10px; 
   }
-
+  ul li a:hover .fab{
+    color: var(--black);
+  }
+  ul li a:hover .fas{
+    color: var(--black);
+  }
   ul li a:hover {
 	transform: perspective(1000px) rotate(-30deg) skew(25deg)
 	  translate(20px, -20px);
@@ -112,7 +118,7 @@ html {
 	color: var(--white);
   }
   ul li:hover:nth-child(1) a {
-	background: var(--facebook);
+	background: rgba(214, 44, 44, 0.30);
   }
   ul li:hover:nth-child(1) a::before {
 	background: rgb(134, 28, 28);
@@ -121,7 +127,7 @@ html {
 	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(2) a {
-	background: var(--instagram);
+	background: rgba(214, 44, 44, 0.30);
   }
   ul li:hover:nth-child(2) a::before {
 	background: rgb(134, 28, 28);
@@ -130,7 +136,7 @@ html {
 	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(3) a {
-	background: var(--twitter);
+	background: rgba(214, 44, 44, 0.30);
   }
   ul li:hover:nth-child(3) a::before {
 	background: rgb(134, 28, 28);
@@ -139,7 +145,8 @@ html {
 	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(4) a {
-	background: var(--apple);
+	background: rgba(214, 44, 44, 0.30);;
+  
   }
   ul li:hover:nth-child(4) a::before {
 	background: rgb(134, 28, 28);
