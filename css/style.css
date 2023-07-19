@@ -58,6 +58,7 @@ html {
 	--twitter: rgb(214, 44, 44);
 	--instagram: rgb(214, 44, 44);
 	--apple: rgb(214, 44, 44);
+  --red: rgb(214, 44, 44);
   }
   
   ul {
@@ -75,13 +76,13 @@ html {
   }
   ul li a .fab {
 	font-size: 40px;
-	color: var(--black);
+	color: var(--red);
 	line-height: 80px;
 	transition: 0.5s;
   }
   .fas {
 	font-size: 40px;
-	color: var(--black);
+	color: var(--red);
 	line-height: 80px;
 	transition: 0.5s;
   }
@@ -100,7 +101,7 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.39);
   border: 1px solid rgba(255, 255, 255, 0.39);
   }
-  
+
   ul li a:hover {
 	transform: perspective(1000px) rotate(-30deg) skew(25deg)
 	  translate(20px, -20px);
