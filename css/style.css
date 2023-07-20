@@ -145,8 +145,7 @@ html {
 	background: rgb(212, 69, 69);
   }
   ul li:hover:nth-child(4) a {
-	background: rgba(214, 44, 44, 0.30);;
-  
+	background: rgba(214, 44, 44, 0.30);
   }
   ul li:hover:nth-child(4) a::before {
 	background: rgb(134, 28, 28);
